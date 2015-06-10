@@ -1,0 +1,111 @@
+html
+{
+    margin:0;
+    padding:0; 
+    text-align: center; 
+}
+body
+{
+    font-family: Verdana; 
+    font-size: 14px;
+}
+table
+{
+    width: 715px;
+    border: 1px solid #013F1D;
+}
+#header
+{ 
+    background-color: #013F1D;
+    height: 180px;
+    padding: 5px;
+    text-align: center;
+}
+#wrapper 
+{ 
+    width: 960px;
+    margin: 11px auto; 
+    text-align: left;
+    padding: 5px;
+    border: 1px solid #013F1D;
+}
+#content
+{ 
+    padding-right: 11px;
+    padding-left: 50px;
+    float: right;
+    width: 720px; 
+    font-family:  Verdana;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+#content h3
+{
+    border-bottom: 1px solid #013F1D;
+    font-size: 14px;
+    font-family:  Verdana;
+    color: #013F1D;
+    text-align: left;
+}
+#content img
+{
+    margin: 5px;
+    padding: 10px;
+    border-width: 0px;
+    border: 1px solid #013F1D;
+}
+#content a
+{
+    text-decoration: none;
+    color: #013F1D;
+    border-bottom: 1px dashed #013F1D;
+}
+#left
+{
+    float:left;
+    width: 150px; 
+    padding: 2px;
+
+}
+#left li
+{
+    list-style-type: none;
+}
+#left li p
+{
+    font-size: 14px;
+    border-bottom: 1px solid #013F1D;
+    font-weight: bold;
+    color: #013F1D;
+}
+#left li a
+{
+    text-decoration: none;
+    font-size: 14px;
+    font-family:  Verdana, Georgia;
+    color: #013F1D;
+}
+#left li a:hover
+{
+    border-bottom: 1px dashed #013F1D;
+    color: #000000;
+}
+#footer
+{ 
+    clear: both;
+    text-align: center;
+    color: #013F1D;
+    font-size: 9px;
+    padding-top: 80px;
+}
+#footer a
+{
+    text-decoration: none;
+}
+.title
+{
+    background-color: #013F1D;
+    color: white;
+    font-size: 18px;
+    font-family: Verdana; 
+}

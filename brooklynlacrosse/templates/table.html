@@ -1,0 +1,24 @@
+{% extends 'layout.html' %}
+{% block content %}
+
+<h3>{{title}}</h3>
+
+<table class='tbl'>
+
+    <tr>
+    {% for head in header %}
+        <td class='title'>{{head}}</td>
+    {% endfor %}
+    </tr>
+
+    {% for entry in rows %}
+    <tr>
+    {% for item in entry %}
+    <td>{{item}}</td>
+    {% endfor %}
+    </tr>
+    {% endfor %}
+
+</table>
+
+{% endblock %}
