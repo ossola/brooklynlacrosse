@@ -61,7 +61,7 @@ def index():
 
 @app.route('/about')
 def about():
-        return flask.render_template('about.html')
+    return flask.render_template('about.html')
 
 @app.route('/roster')
 def roster():
