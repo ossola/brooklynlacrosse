@@ -69,7 +69,7 @@ def roster():
 
 @app.route('/roster_m')
 def roster_m():
-    return flask.render_template('table.html', header=data['roster_m'][0], rows=data['roster_m'][1], title='2016 Masters Summer Roster')
+    return flask.render_template('table.html', header=data['roster_m'][0], rows=data['roster_m'][1], title='2016 Masters Roster')
 
 @app.route('/schedule')
 def schedule():
@@ -77,7 +77,7 @@ def schedule():
 
 @app.route('/schedule_m')
 def schedule_m():
-    return flask.render_template('table.html', header=data['schedule_m'][0], rows=data['schedule_m'][1], title='2016 Masters Summer Schedule')
+    return flask.render_template('table.html', header=data['schedule_m'][0], rows=data['schedule_m'][1], title='2016 Masters Schedule')
 
 if __name__ == '__main__':
    app.run()
