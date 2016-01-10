@@ -23,7 +23,7 @@ credentials = oauth2client.client.SignedJwtAssertionCredentials(json_key['client
 client = gdata.spreadsheets.client.SpreadsheetsClient()
 client.auth_token = TokenFromOAuth2Creds(credentials)
 
-sheets = ['website_roster', 'website_schedule', 'website_roster_m', 'website_schedule_m']
+sheets = ['roster', 'schedule', 'roster_m', 'schedule_m']
 data = {}
 
 for sheet in sheets:
