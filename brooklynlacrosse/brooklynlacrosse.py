@@ -79,5 +79,14 @@ def schedule():
 def schedule_m():
     return flask.render_template('table.html', header=data['schedule_m'][0], rows=data['schedule_m'][1], title='2016 Masters Schedule')
 
+@app.route('signup')
+def signup():
+    return redirect('https://docs.google.com/forms/d/1zZtMQi9JE-n1Tf1k8DpLL1ecxN_S5cqpLV7pa4NIm4k/viewform')
+
+@app.route('masters')
+def masters():
+    return redirect('https://docs.google.com/forms/d/1jgUiG1UfT0nR8XQvUKue_Go7uWpWnzXXaCkDvyK5ptY/viewform')
+
+
 if __name__ == '__main__':
    app.run()
