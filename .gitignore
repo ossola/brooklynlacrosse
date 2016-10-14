@@ -1,3 +1,4 @@
 .vagrant
 google.json
 .DS_Store
+*.pyc
