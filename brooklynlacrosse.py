@@ -2,7 +2,7 @@
 
 import os
 import gdata.spreadsheets.client
-import oauth2client.client
+import oauth2client.service_account
 import flask
 import json
 import httplib2
@@ -17,9 +17,9 @@ class TokenFromOAuth2Creds:
 
 app = flask.Flask(__name__)
 
-json_key = json.load(open('/data/web/brooklynlacrosse/google.json'))
+json_key = json.load(open('/home/ossola/brooklynlacrosse/google.json'))
 scope = ['https://spreadsheets.google.com/feeds']
-credentials = oauth2client.client.SignedJwtAssertionCredentials(json_key['client_email'], json_key['private_key'], scope)
+credentials = oauth2client.service_account.ServiceAccountCredentials.from_json_keyfile_dict(json_key, scope)
 client = gdata.spreadsheets.client.SpreadsheetsClient()
 client.auth_token = TokenFromOAuth2Creds(credentials)
 
