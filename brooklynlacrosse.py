@@ -65,19 +65,19 @@ def about():
 
 @app.route('/roster')
 def roster():
-    return flask.render_template('table.html', header=data['roster'][0], rows=data['roster'][1], title='2017 A.L.L. Roster')
+    return flask.render_template('table.html', header=data['roster'][0], rows=data['roster'][1], title='2018 A.L.L. Roster')
 
 @app.route('/roster_m')
 def roster_m():
-    return flask.render_template('table.html', header=data['roster_m'][0], rows=data['roster_m'][1], title='2017 Masters Roster')
+    return flask.render_template('table.html', header=data['roster_m'][0], rows=data['roster_m'][1], title='2018 Masters Roster')
 
 @app.route('/schedule')
 def schedule():
-    return flask.render_template('table.html', header=data['schedule'][0], rows=data['schedule'][1], title='2017 A.L.L. Schedule')
+    return flask.render_template('table.html', header=data['schedule'][0], rows=data['schedule'][1], title='2018 A.L.L. Schedule')
 
 @app.route('/schedule_m')
 def schedule_m():
-    return flask.render_template('table.html', header=data['schedule_m'][0], rows=data['schedule_m'][1], title='2017 Masters Schedule')
+    return flask.render_template('table.html', header=data['schedule_m'][0], rows=data['schedule_m'][1], title='2018 Masters Schedule')
 
 @app.route('/signup')
 def signup():
